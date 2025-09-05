@@ -1,0 +1,18 @@
+a=[]
+dimensions = [[25,60],[39,52],[16,63],[33,56]]
+q=0
+for s in dimensions :
+    q=0
+    for nums in s:
+        q = q + nums**2
+    
+    #print(q)
+    a.append(q)#109,106
+x = max(a)
+print(x)
+z = 1
+y = a.index(x)
+for t in dimensions[y]:
+    z = z*t
+
+print(z)
